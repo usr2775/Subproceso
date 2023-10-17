@@ -1,9 +1,11 @@
+CALCULO DE VOCALES 
+
 Este proyecto es una aplicación que cuenta las vocales (aeiou) en un archivo de texto llamado "lorem_ipsum.txt". Está organizado en varios paquetes y clases:
 
-net.salesianos.Main: El punto de entrada de la aplicación. Carga las líneas del archivo, inicia procesos para contar vocales, espera a que los procesos finalicen y muestra los resultados.
-net.salesianos.utils.Utils: Contiene métodos para cargar líneas desde un archivo y obtener el recuento de vocales desde un archivo de salida.
-net.salesianos.processes.VowelCounter: Un programa independiente que cuenta las vocales en un texto.
-net.salesianos.launcher.ProcessLauncher: Inicia procesos que ejecutan VowelCounter y obtiene los recuentos de vocales desde archivos de salida.
+- net.salesianos.Main: El punto de entrada de la aplicación. Carga las líneas del archivo, inicia procesos para contar vocales, espera a que los procesos finalicen y muestra los resultados.
+- net.salesianos.utils.Utils: Contiene métodos para cargar líneas desde un archivo y obtener el recuento de vocales desde un archivo de salida.
+- net.salesianos.processes.VowelCounter: Un programa independiente que cuenta las vocales en un texto.
+- net.salesianos.launcher.ProcessLauncher: Inicia procesos que ejecutan VowelCounter y obtiene los recuentos de vocales desde archivos de salida.
 
 
 Clase Main:
@@ -39,12 +41,4 @@ La clase ProcessLauncher contiene métodos para iniciar procesos que cuentan las
 
 
 
-
-
-
-Para utilizar la aplicación:
-
-Asegúrate de tener un archivo de texto llamado "lorem_ipsum.txt" en el mismo directorio que el código.
-Ejecuta la clase Main para contar las vocales en el archivo y ver los resultados en la consola.
-El código carga el archivo, inicia procesos para contar las vocales y muestra el recuento total de vocales en el texto, además de generar archivos de salida con resultados parciales.
 
