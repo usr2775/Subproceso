@@ -21,4 +21,15 @@ public class Utils {
         }
         return lines;
     }
+    public static int getTotalCountFromFile(String fileRoute) {
+              try {
+                  BufferedReader bufferedReader = new BufferedReader(new FileReader(fileRoute));
+                  String firstLine = bufferedReader.readLine();
+                  bufferedReader.close();
+                  return Integer.parseInt(firstLine);
+              } catch (IOException e) {
+                  e.printStackTrace();
+              }
+              return 0;
+}
 }
